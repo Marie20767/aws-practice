@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "sourceMap": true,
+    "outDir": "build",
+    "strict": true,
+    "lib": ["esnext"],
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "build.js", "ecosystem.config.cjs"],
+  "exclude": ["node_modules", "build"]
+}
