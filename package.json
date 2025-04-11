@@ -4,7 +4,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon",
-    "build:prod": "node -r esbuild-runner/register build.js",
+    "build:prod": "node -r dotenv/config -r esbuild-runner/register build.js",
     "start:pm2": "npm run build:prod && pm2 start build/index.js --watch --name aws-practice --log-date-format 'YYYY-MM-DD HH:mm:ss'",
     "stop:pm2": "pm2 stop aws-practice",
     "check-types": "tsc --noemit",
