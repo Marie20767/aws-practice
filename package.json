@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "nodemon",
     "build:prod": "node -r esbuild-runner/register build.js",
-    "start:pm2": "npm run build:prod && pm2 start build/index.js --watch --env --name aws-practice --log-date-format 'YYYY-MM-DD HH:mm:ss'",
-    "stop:pm2": "pm2 stop aws-practice",
+    "start:pm2": "npm run build:prod && pm2 start",
+    "stop:pm2": "pm2 stop",
     "check-types": "tsc --noemit",
     "eslint": "eslint '**/*.ts'",
     "lint": "npm run check-types && npm run eslint",
