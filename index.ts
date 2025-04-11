@@ -11,7 +11,6 @@ import { saveImage } from 'utils';
 import { Readable } from 'stream';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 
-
 const { S3_BUCKET_NAME, AWS_REGION } = process.env;
 
 const app = express();
