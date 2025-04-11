@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { createServer } from 'http';
@@ -9,7 +11,6 @@ import { saveImage } from 'utils';
 import { Readable } from 'stream';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 
-import 'dotenv/config';
 
 const { S3_BUCKET_NAME, AWS_REGION } = process.env;
 
