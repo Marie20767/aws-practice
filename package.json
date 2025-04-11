@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "build:prod": "node -r esbuild-runner/register build.js",
-    "start:pm2": "npm run build:prod && pm2 start build/index.js --name aws-practice --log-date-format 'YYYY-MM-DD HH:mm:ss'",
+    "start:pm2": "npm run build:prod && pm2 start build/index.js --watch build/index.js --name aws-practice --log-date-format 'YYYY-MM-DD HH:mm:ss'",
     "stop:pm2": "pm2 stop aws-practice",
     "check-types": "tsc --noemit",
     "eslint": "eslint '**/*.ts'",
@@ -20,9 +20,7 @@
     "esbuild": "^0.25.2",
     "esbuild-node-tsc": "^2.0.5",
     "esbuild-runner": "^2.2.2",
-    "express": "^4.21.2",
-    "i": "^0.3.7",
-    "npm": "^11.2.0"
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
