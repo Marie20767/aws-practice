@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import { createServer } from 'http';
@@ -118,8 +120,8 @@ app.get('/image/url/:name', async (request: Request, response: Response) => {
 // TODO: dockerise it then deploy to EC2 again and compare
 
 const startServer = () => {
-	server.listen(8080, '0.0.0.0', () => {
-		console.log('This app is running on port 8080');
+	server.listen(8050, '0.0.0.0', () => {
+		console.log('This app is running on port 8050');
 	});
 };
 
