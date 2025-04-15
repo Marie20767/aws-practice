@@ -119,7 +119,7 @@ app.get('/image/url/:name', async (request: Request, response: Response) => {
 
 const startServer = () => {
 	server.listen(8080, '0.0.0.0', () => {
-		console.log('App running on port 8080');
+		console.log('This app is running on port 8080');
 	});
 };
 
