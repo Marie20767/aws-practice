@@ -116,9 +116,6 @@ app.get('/image/url/:name', async (request: Request, response: Response) => {
 	}
 });
 
-// TODO: deploy to EC2 without docker
-// TODO: dockerise it then deploy to EC2 again and compare
-
 const startServer = () => {
 	server.listen(8050, '0.0.0.0', () => {
 		console.log('This app is running on port 8050');
